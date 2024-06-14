@@ -9,7 +9,7 @@ effect give @s minecraft:glowing 11 0 true
 effect give @s minecraft:speed 220 1 true
 effect give @s minecraft:jump_boost 220 1 true
 #gear
-item replace entity @a[team=Seekers] armor.chest with minecraft:elytra{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],Unbreakable:1b}
+item replace entity @a[team=Seekers] armor.chest with minecraft:elytra[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1}}]
 give @s minecraft:firework_rocket 13
 
 #sound effect

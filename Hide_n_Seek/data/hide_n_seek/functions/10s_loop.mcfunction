@@ -5,7 +5,7 @@ effect give @a[team=Seekers] minecraft:speed 11 1 true
 effect give @a[team=Seekers] minecraft:jump_boost 11 1 true
 
 #give seekers gear
-item replace entity @a[team=Seekers] armor.chest with minecraft:elytra{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],Unbreakable:1b}
+item replace entity @a[team=Seekers] armor.chest with minecraft:elytra[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1}}]
 give @a[team=Seekers] minecraft:firework_rocket
 
 #deal with new players

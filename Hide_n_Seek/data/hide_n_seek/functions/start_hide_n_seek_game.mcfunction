@@ -1,7 +1,7 @@
 #clear inventories
-clear @a[gamemode=survival] minecraft:elytra
-clear @a[gamemode=survival] minecraft:firework_rocket
-clear @a[gamemode=survival] minecraft:crossbow
+clear @a[gamemode=!creative] minecraft:elytra
+clear @a[gamemode=!creative] minecraft:firework_rocket
+clear @a[gamemode=!creative] minecraft:crossbow
 
 #give effects
 effect give @a minecraft:saturation 40 0 true
