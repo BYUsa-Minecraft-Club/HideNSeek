@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:poisonous_potato",
+            "components": {
+              "minecraft:custom_model_data": 10001
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "hide_n_seek:advancements/items/disguise/disguise_use"
+    }
+  }
+  

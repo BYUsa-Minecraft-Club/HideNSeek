@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:music_disc_chirp",
+            "components": {
+              "minecraft:custom_model_data": 10003
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "hide_n_seek:advancements/items/spiders/spiders_use"
+    }
+  }
+  

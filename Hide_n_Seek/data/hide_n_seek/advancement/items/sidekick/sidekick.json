@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:music_disc_mellohi",
+            "components": {
+              "minecraft:custom_model_data": 10004
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "hide_n_seek:advancements/items/sidekick/sidekick_use"
+    }
+  }
+  

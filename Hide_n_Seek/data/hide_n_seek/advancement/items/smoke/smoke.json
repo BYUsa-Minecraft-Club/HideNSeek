@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:music_disc_11",
+            "components": {
+              "minecraft:custom_model_data": 10002
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "hide_n_seek:advancements/items/smoke/smoke_use"
+    }
+  }
+  
