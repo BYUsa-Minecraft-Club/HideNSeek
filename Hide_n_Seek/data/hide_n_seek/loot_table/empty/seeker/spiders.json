@@ -1,0 +1,74 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:music_disc_chirp",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": "Spiders"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": ";:::; ... Follow the Spiders",
+                    "color": "red"
+                  },
+                  {
+                    "text": "Right Click",
+                    "color": "red",
+                    "bold": true,
+                    "extra": [
+                          {
+                            "text": " to Spawn Spiders",
+                            "color": "red",
+                            "bold": false
+                          }
+                        ]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": false,
+                  "!minecraft:jukebox_playable": {},
+                  "food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true,
+                    "eat_seconds": 1000000
+                  },
+                  "minecraft:rarity": "rare"
+                }
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 10003
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:enchantments": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

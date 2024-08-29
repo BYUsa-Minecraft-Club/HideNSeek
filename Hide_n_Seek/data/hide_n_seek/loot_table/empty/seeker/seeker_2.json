@@ -1,0 +1,40 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/a_golden_carrot",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/bazooka",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/disguise",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/really_long_stick",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/seeker_sidekick",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/walters_cap",
+            "weight": 2
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,30 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/disguise",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/irs",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/really_long_stick",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/seeker/walters_cap",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }
+  
