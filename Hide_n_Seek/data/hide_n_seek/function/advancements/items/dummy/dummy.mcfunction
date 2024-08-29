@@ -1,0 +1,6 @@
+#summon dummy
+execute at @s run summon armor_stand ~ ~ ~ {Team:"Hiders",ShowArms:1b,NoBasePlate:1b,Tags:["decoy"],ArmorItems:[{id:"minecraft:leather_boots",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}},"minecraft:enchantment_glint_override":false}},{id:"minecraft:leather_leggings",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}},"minecraft:enchantment_glint_override":false}},{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}},"minecraft:enchantment_glint_override":false}},{id:"minecraft:leather_helmet",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}},"minecraft:enchantment_glint_override":false}}]}
+
+#replace correct hand with air
+execute unless items entity @s weapon.mainhand music_disc_relic[custom_model_data=10001] run execute if items entity @s weapon.offhand music_disc_relic[custom_model_data=10001] run item replace entity @s weapon.offhand with minecraft:air
+execute if items entity @s weapon.mainhand music_disc_relic[custom_model_data=10001] run item replace entity @s weapon.mainhand with minecraft:air
