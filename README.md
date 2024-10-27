@@ -4,7 +4,9 @@ Adds a function that runs a hide and seek game to take the load off the admins
 
 Function to start a game:
 
-/function hide_n_seek:start_hide_n_seek_game
+/trigger start_hide_n_seek
+
+/trigger start_hide_n_seek set 1200 (time is in ticks)
 
 The game starts waiting for a seeker to be assigned shown by a bossbar. During the entirety of the game, players are given saturation. A seeker can be assigned using the following commands:
 
