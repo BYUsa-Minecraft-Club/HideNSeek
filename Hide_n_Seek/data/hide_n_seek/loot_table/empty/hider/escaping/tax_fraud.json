@@ -1,0 +1,79 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:music_disc_11",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": "Tax Fraud"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Everything's Legal When There's",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "No Cops Around!",
+                    "color": "dark_gray"
+                  },
+                  {
+                    "text": "Right Click",
+                    "color": "dark_gray",
+                    "bold": true,
+                    "extra": [
+                      {
+                        "text": " to Create a Smoke Cloud",
+                        "bold": false
+                      }
+                    ]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": false,
+                  "!minecraft:jukebox_playable": {},
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true
+                  },
+                  "minecraft:consumable": {
+                    "consume_seconds": 1000000
+                  },
+                  "minecraft:rarity": "uncommon"
+                }
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 10002
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:enchantments": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

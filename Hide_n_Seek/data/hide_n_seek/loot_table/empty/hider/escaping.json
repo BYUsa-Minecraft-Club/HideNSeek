@@ -1,0 +1,40 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/elytra",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/fruit_basket",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/getaway_pearl",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/one_sec",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/only_hope",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/tax_fraud",
+            "weight": 2
+          }
+        ]
+      }
+    ]
+  }
+  

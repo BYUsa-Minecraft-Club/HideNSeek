@@ -1,0 +1,76 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:music_disc_mellohi",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": "Seeker Sidekick"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Let Your Sidekick do All the Work",
+                    "color": "light_purple"
+                  },
+                  {
+                    "text": "Right Click",
+                    "color": "light_purple",
+                    "bold": true,
+                    "extra": [
+                          {
+                            "text": " to Spawn an Endermite",
+                            "color": "light_purple",
+                            "bold": false
+                          }
+                        ]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": false,
+                  "!minecraft:jukebox_playable": {},
+                  "food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true
+                  },
+                  "minecraft:consumable": {
+                    "consume_seconds": 1000000
+                  },
+                  "minecraft:rarity": "epic"
+                }
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 10004
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:enchantments": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

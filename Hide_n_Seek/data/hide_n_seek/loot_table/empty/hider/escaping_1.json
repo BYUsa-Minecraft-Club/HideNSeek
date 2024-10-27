@@ -1,0 +1,30 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/fruit_basket_1",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/getaway_pearl",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/one_sec",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/escaping/only_hope",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }
+  

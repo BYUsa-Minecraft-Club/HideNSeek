@@ -1,0 +1,30 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/hiding/fancy_shirt",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/hiding/inflatable_dummy",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/hiding/shard_of_the_cosmos",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "hide_n_seek:empty/hider/hiding/wind_charge",
+            "weight": 3
+          }
+        ]
+      }
+    ]
+  }
+  

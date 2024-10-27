@@ -1,0 +1,76 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:phantom_membrane",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": "Floaty Gum"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "You Weren't Supposed to Swallow It!",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "Slow Falling",
+                    "color": "gray"
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": false,
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true
+                  },
+                  "minecraft:consumable": {
+                    "consume_seconds": 2.4,
+                    "on_consume_effects": [
+                      {
+                        "type": "minecraft:apply_effects",
+                        "effects": [
+                          {
+                            "id": "minecraft:slow_falling",
+                            "amplifier": 0,
+                            "duration": 600,
+                            "show_icon": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "minecraft:rarity": "uncommon"
+                }
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:enchantments": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

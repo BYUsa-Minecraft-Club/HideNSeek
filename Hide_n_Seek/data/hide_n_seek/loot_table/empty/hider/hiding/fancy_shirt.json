@@ -1,0 +1,115 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_chestplate",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": "Fancy Shirt"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "A Size Too Small",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "Shrinks You",
+                    "color": "gold"
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:vanishing_curse": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": false,
+                  "minecraft:unbreakable": {
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:dyed_color": {
+                    "rgb": 16711867,
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:trim": {
+                    "material": "minecraft:gold",
+                    "pattern": "minecraft:silence",
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:rarity": "epic"
+                }
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "id": "scale",
+                    "attribute": "minecraft:scale",
+                    "amount": -0.34,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "movement_speed",
+                    "attribute": "minecraft:movement_speed",
+                    "amount": -0.02,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "entity_interaction_range",
+                    "attribute": "minecraft:entity_interaction_range",
+                    "amount": -1,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "block_interaction_range",
+                    "attribute": "minecraft:block_interaction_range",
+                    "amount": -1,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "step_height",
+                    "attribute": "minecraft:step_height",
+                    "amount": -0.2,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
+                  {
+                    "id": "jump_strength",
+                    "attribute": "minecraft:jump_strength",
+                    "amount": -0.05,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:toggle_tooltips",
+                "toggles": {
+                  "minecraft:enchantments": false,
+                  "minecraft:attribute_modifiers": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
