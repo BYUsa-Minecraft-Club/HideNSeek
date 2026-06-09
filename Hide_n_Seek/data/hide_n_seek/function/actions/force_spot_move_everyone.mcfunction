@@ -1,8 +1,8 @@
 #alert players of the hiders' new effects
 playsound minecraft:block.bell.resonate master @a ~ ~ ~ 1 2 1
 title @a times 1s 11s 1s
-title @a[team=Hiders] actionbar "You are GLOWING. Run while you still can"
-title @a[team=Seekers] actionbar "Your prey has been revealed"
+title @a[team=Hiders] actionbar [{"text":"You are ","color":"white"},{"text":"GLOWING","color":"gold"},{"text":". Run while you still can","color":"white"}]
+title @a[team=Seekers] actionbar [{"text":"Your prey has been ","color":"white"},{"text":"Revealed","color":"gold"}]
 
 #give hiders effects
 effect give @e[team=Hiders] minecraft:glowing 3 0 true
