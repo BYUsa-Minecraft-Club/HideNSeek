@@ -12,5 +12,5 @@ team join Hiders @a[team=!Seekers,team=!Hiders]
 execute store result score starting_seekers hide_n_seek.variables if entity @a[team=Seekers]
 
 #check if there are any seekers
-execute if score starting_seekers hide_n_seek.variables matches 0 run schedule function hide_n_seek:start/wait_for_hunter 1s
-execute if score starting_seekers hide_n_seek.variables matches 1.. run function hide_n_seek:grace/grace_period
+execute if score starting_seekers hide_n_seek.variables matches 0 run return run schedule function hide_n_seek:start/wait_for_hunter 1s
+function hide_n_seek:grace/grace_period

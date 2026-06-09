@@ -1,0 +1,40 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "team": "Seekers"
+              }
+            }
+          ],
+          "damage": {
+            "source_entity": {
+              "type_specific": {
+                "type": "player"
+              },
+              "team": "Hiders",
+              "equipment": {
+                "mainhand": {
+                  "components": {
+                    "custom_data": {
+                      "one_sec": true
+                    }
+                  }
+                }
+              }
+            },
+            "type": {}
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "hide_n_seek:advancements/one_sec"
+    }
+  }
+  

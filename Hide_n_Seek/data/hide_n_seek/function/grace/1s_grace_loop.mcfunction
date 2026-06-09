@@ -1,6 +1,6 @@
 #decrease countdown
 scoreboard players remove grace hide_n_seek.variables 1
-execute store result bossbar minecraft:timer value run scoreboard players get grace hide_n_seek.variables
+execute store result bossbar hide_n_seek:timer value run scoreboard players get grace hide_n_seek.variables
 #calculate minutes and seconds
 #minutes
 execute store result score grace.minutes hide_n_seek.variables run scoreboard players get grace hide_n_seek.variables
@@ -9,11 +9,11 @@ scoreboard players operation grace.minutes hide_n_seek.variables /= 60 hide_n_se
 execute store result score grace.seconds hide_n_seek.variables run scoreboard players get grace hide_n_seek.variables
 scoreboard players operation grace.seconds hide_n_seek.variables %= 60 hide_n_seek.variables
 #set scores in storage for macro use
-execute store result storage minecraft:hide_n_seek minutes int 1 run scoreboard players get grace.minutes hide_n_seek.variables
-execute store result storage minecraft:hide_n_seek seconds int 1 run scoreboard players get grace.seconds hide_n_seek.variables
+execute store result storage hide_n_seek:timer minutes int 1 run scoreboard players get grace.minutes hide_n_seek.variables
+execute store result storage hide_n_seek:timer seconds int 1 run scoreboard players get grace.seconds hide_n_seek.variables
 #set timer name
-execute if score grace.seconds hide_n_seek.variables matches 0..9 run function hide_n_seek:timer/grace_period_bossbar_name_0 with storage minecraft:hide_n_seek
-execute unless score grace.seconds hide_n_seek.variables matches 0..9 run function hide_n_seek:timer/grace_period_bossbar_name with storage minecraft:hide_n_seek
+execute if score grace.seconds hide_n_seek.variables matches 0..9 run function hide_n_seek:grace/timer/grace_period_bossbar_name_0 with storage hide_n_seek:timer
+execute unless score grace.seconds hide_n_seek.variables matches 0..9 run function hide_n_seek:grace/timer/grace_period_bossbar_name with storage hide_n_seek:timer
 
 #apply seeker effects
 effect give @a minecraft:saturation 40 0 true
@@ -27,7 +27,7 @@ effect give @a[team=Seekers] minecraft:weakness 2 255 true
 effect give @a[gamemode=!creative,team=Hiders] minecraft:invisibility 2 0 true
 
 #deal with new players
-bossbar set minecraft:timer players @a
+bossbar set hide_n_seek:timer players @a
 scoreboard players set @a[team=!Hiders,team =!Seekers] HIDE_N_SEEK 0
 scoreboard players display numberformat @a[team=!Hiders,team =!Seekers] HIDE_N_SEEK styled {"color":"gray"}
 scoreboard players display numberformat @a[team=!Hiders,team =!Seekers] HIDE_N_SEEK fixed {"text":"","color":"gray"}

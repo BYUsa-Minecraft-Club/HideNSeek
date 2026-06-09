@@ -7,5 +7,5 @@ execute at @s run particle minecraft:campfire_cosy_smoke ~ ~ ~ 2.5 2 2.5 0.01 20
 execute at @s run particle minecraft:campfire_signal_smoke ~ ~ ~ 2.5 2 2.5 0.01 5000 force
 
 #replace correct hand with air
-execute unless items entity @s weapon.mainhand music_disc_11[custom_model_data=10002] run execute if items entity @s weapon.offhand music_disc_11[custom_model_data=10002] run item replace entity @s weapon.offhand with minecraft:air
-execute if items entity @s weapon.mainhand music_disc_11[custom_model_data=10002] run item replace entity @s weapon.mainhand with minecraft:air
+execute unless items entity @s weapon.mainhand music_disc_11[custom_data={smoke:1b}] run execute if items entity @s weapon.offhand music_disc_11[custom_data={smoke:1b}] run item replace entity @s weapon.offhand with minecraft:air
+execute if items entity @s weapon.mainhand music_disc_11[custom_data={smoke:1b}] run item replace entity @s weapon.mainhand with minecraft:air

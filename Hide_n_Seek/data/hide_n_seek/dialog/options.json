@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Hide & Seek",
+  "external_title": "Hide & Seek",
+  "pause": false,
+  "columns": 1,
+  "button_width": 200,
+  "dialogs": [
+    "hide_n_seek:start",
+    "hide_n_seek:end",
+    "hide_n_seek:boons",
+    "hide_n_seek:force_spot_move",
+    "hide_n_seek:block_search"
+  ],
+  "exit_action": {
+    "label": "Exit",
+    "width": 200
+  }
+}

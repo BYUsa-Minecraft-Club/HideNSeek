@@ -15,3 +15,5 @@ execute as @a[team=Hiders,scores={hide_n_seek.shard_spectator=1..}] run scoreboa
 execute as @a[team=Hiders,scores={hide_n_seek.shard_spectator=1}] run gamemode adventure
 #life cost
 execute as @a[team=Hiders,scores={hide_n_seek.shard_spectator=1}] run damage @s 11 minecraft:magic
+#apply effects
+execute as @a[team=Hiders,scores={hide_n_seek.shard_spectator=1}] run effect give @s blindness 13 0 true 

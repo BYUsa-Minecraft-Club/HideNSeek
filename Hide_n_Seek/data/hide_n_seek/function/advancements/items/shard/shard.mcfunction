@@ -16,5 +16,5 @@ gamemode spectator @s[team=Hiders]
 function hide_n_seek:advancements/items/shard/shard_spectator
 
 #replace correct hand with air
-execute unless items entity @s weapon.mainhand echo_shard[custom_model_data=10003] run execute if items entity @s weapon.offhand echo_shard[custom_model_data=10003] run item replace entity @s weapon.offhand with minecraft:air
-execute if items entity @s weapon.mainhand echo_shard[custom_model_data=10003] run item replace entity @s weapon.mainhand with minecraft:air
+execute unless items entity @s weapon.mainhand echo_shard[custom_data={shard:1b}] run execute if items entity @s weapon.offhand echo_shard[custom_data={shard:1b}] run item replace entity @s weapon.offhand with minecraft:air
+execute if items entity @s weapon.mainhand echo_shard[custom_data={shard:1b}] run item replace entity @s weapon.mainhand with minecraft:air

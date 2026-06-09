@@ -6,7 +6,9 @@
           "item": {
             "items": "minecraft:music_disc_precipice",
             "components": {
-              "minecraft:custom_model_data": 10002
+              "minecraft:custom_data": {
+                "beeper": true
+              }
             }
           }
         }

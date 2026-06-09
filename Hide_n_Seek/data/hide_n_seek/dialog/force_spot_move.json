@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Hide & Seek",
+  "external_title": "Force Spot Move",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Be careful when forcing hiders to move"
+    }
+  ],
+  "pause": false,
+  "columns": 1,
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "name",
+      "label": "Player in Illegal Spot",
+      "max_length": 16
+    }
+  ],
+  "actions": [
+    {
+      "label": "Force Spot Move for Specific Player",
+      "width": 200,
+      "action": {
+        "type": "dynamic/run_command",
+        "template": "/function hide_n_seek:actions/force_spot_move_specific {name:$(name)}"
+      }
+    },
+    {
+      "label": "Force Spot Move for All Hiders",
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "/function hide_n_seek:actions/force_spot_move_everyone"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Back",
+    "width": 200,
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "hide_n_seek:options"
+    }
+  }
+}

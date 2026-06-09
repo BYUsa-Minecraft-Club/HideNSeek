@@ -6,5 +6,5 @@ scoreboard players operation @s hide_n_seek.undercover += 60 hide_n_seek.variabl
 effect clear @s minecraft:glowing
 
 #replace correct hand with air
-execute unless items entity @s weapon.mainhand poisonous_potato[custom_model_data=10001] run execute if items entity @s weapon.offhand poisonous_potato[custom_model_data=10001] run item replace entity @s weapon.offhand with minecraft:air
-execute if items entity @s weapon.mainhand poisonous_potato[custom_model_data=10001] run item replace entity @s weapon.mainhand with minecraft:air
+execute unless items entity @s weapon.mainhand poisonous_potato[custom_data={disguise:1b}] run execute if items entity @s weapon.offhand poisonous_potato[custom_data={disguise:1b}] run item replace entity @s weapon.offhand with minecraft:air
+execute if items entity @s weapon.mainhand poisonous_potato[custom_data={disguise:1b}] run item replace entity @s weapon.mainhand with minecraft:air

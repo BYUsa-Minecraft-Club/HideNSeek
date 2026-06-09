@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Hide & Seek",
+  "external_title": "Block Search",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Choose how far to let seekers know if a hider is nearby or not"
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Be careful when helping seekers"
+    }
+  ],
+  "pause": false,
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "range",
+      "label": "Range to Search",
+      "start": 5,
+      "end": 200,
+      "step": 5,
+      "initial": 100
+    }
+  ],
+  "actions": [
+    {
+      "label": "Search for Hiders",
+      "width": 200,
+      "action": {
+        "type": "dynamic/run_command",
+        "template": "/function hide_n_seek:actions/block_search {range:$(range)}"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Back",
+    "width": 200,
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "hide_n_seek:options"
+    }
+  }
+}

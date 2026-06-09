@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:spyglass"
+    },
+    "title": "Hide and Seek",
+    "description": "Adds Functions to Run a Hide and Seek Game",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "scyire_datapacks:scyire_datapacks/root",
+  "criteria": {
+    "exist": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
+  

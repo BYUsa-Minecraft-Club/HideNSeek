@@ -6,7 +6,9 @@
           "item": {
             "items": "minecraft:poisonous_potato",
             "components": {
-              "minecraft:custom_model_data": 10001
+              "minecraft:custom_data": {
+                "disguise": true
+              }
             }
           }
         }

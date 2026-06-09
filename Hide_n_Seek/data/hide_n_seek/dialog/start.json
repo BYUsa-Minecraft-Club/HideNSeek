@@ -1,0 +1,113 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Hide & Seek",
+  "external_title": "Start Game",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Select the parameters for your hide and seek game"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "game_mode",
+      "label": "Game Mode",
+      "options": [
+        {
+          "id": "standard",
+          "display": "Standard",
+          "initial": true
+        },
+        {
+          "id": "block",
+          "display": "Block"
+        },
+        {
+          "id": "chaos",
+          "display": "Chaos"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "grace_length",
+      "label": "Grace Period Length (mins)",
+      "start": 0,
+      "end": 5,
+      "step": 1,
+      "initial": 2
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "game_length",
+      "label": "Game Length (mins)",
+      "start": 1,
+      "end": 30,
+      "step": 1,
+      "initial": 12
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "scale",
+      "label": "Player Scale",
+      "options": [
+        {
+          "id": "normal",
+          "display": "Normal",
+          "initial": true
+        },
+        {
+          "id": "small",
+          "display": "Small"
+        },
+        {
+          "id": "tiny",
+          "display": "Tiny"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "starting_boons",
+      "label": "Starting Boons",
+      "options": [
+        {
+          "id": "no",
+          "display": "Off",
+          "initial": true
+        },
+        {
+          "id": "one",
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:text",
+      "key": "seeker",
+      "label": "Starting Seeker",
+      "max_length": 16,
+      "initial": "@r"
+    }
+  ],
+  "pause": false,
+  "exit_action": {
+    "label": "Back",
+    "width": 200,
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "hide_n_seek:options"
+    }
+  },
+  "actions": [
+    {
+      "label": "Start",
+      "width": 200,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function hide_n_seek:start/start_game {game_mode:$(game_mode),grace_length:$(grace_length),game_length:$(game_length),scale:$(scale),starting_boons:$(starting_boons),seeker:\"$(seeker)\"}"
+      }
+    }
+  ]
+}

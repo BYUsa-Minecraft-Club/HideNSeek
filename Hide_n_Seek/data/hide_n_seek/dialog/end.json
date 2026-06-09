@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Hide & Seek",
+  "external_title": "End Game",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "This will end the current game of hide and seek"
+    }
+  ],
+  "pause": false,
+  "exit_action": {
+    "label": "Back",
+    "width": 200,
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "hide_n_seek:options"
+    }
+  },
+  "actions": [
+    {
+      "label": "End Game",
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function hide_n_seek:end/end_game"
+      }
+    }
+  ]
+}

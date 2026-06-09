@@ -4,9 +4,11 @@
         "trigger": "minecraft:using_item",
         "conditions": {
           "item": {
-            "items": "minecraft:echo_shard",
+            "items": "minecraft:poisonous_potato",
             "components": {
-              "minecraft:custom_model_data": 10003
+              "minecraft:custom_data": {
+                "shard": true
+              }
             }
           }
         }

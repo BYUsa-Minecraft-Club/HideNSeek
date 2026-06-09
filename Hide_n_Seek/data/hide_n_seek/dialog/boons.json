@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Hide & Seek",
+  "external_title": "Boons",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Select the type and power level of the boons to give"
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Be careful when giving boons"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": "Type",
+      "options": [
+        {
+          "id": "hider",
+          "display": "Hider",
+          "initial": true
+        },
+        {
+          "id": "seeker",
+          "display": "Seeker"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "power",
+      "label": "Power Level",
+      "start": 1,
+      "end": 3,
+      "step": 1,
+      "initial": 1
+    }
+  ],
+  "pause": false,
+  "actions": [
+    {
+      "label": "Give Boon",
+      "width": 200,
+      "action": {
+        "type": "dynamic/run_command",
+        "template": "/function hide_n_seek:actions/give_boon {type:$(type),power:$(power)}"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Back",
+    "width": 200,
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "hide_n_seek:options"
+    }
+  }
+}

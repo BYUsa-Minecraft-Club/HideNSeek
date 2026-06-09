@@ -6,7 +6,9 @@
           "item": {
             "items": "minecraft:music_disc_chirp",
             "components": {
-              "minecraft:custom_model_data": 10003
+              "minecraft:custom_data": {
+                "spiders": true
+              }
             }
           }
         }
